@@ -2,7 +2,9 @@ require 'capybara/cucumber'
 require 'capybara/rspec'
 require 'selenium-webdriver'
 require 'site_prism'
+require_relative 'page_helper.rb'
 
+World(PageObjects)
 Capybara.configure do |config|
     #selenium = firefox
     #selenium_chrome = chrome
